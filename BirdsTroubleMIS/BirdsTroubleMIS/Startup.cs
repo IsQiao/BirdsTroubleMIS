@@ -1,4 +1,5 @@
 using BirdsTroubleMIS.Helpers;
+using BirdsTroubleMIS.Models;
 using BirdsTroubleMIS.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -8,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -58,6 +60,13 @@ namespace BirdsTroubleMIS
                     ValidateAudience = false
                 };
             });
+
+            services.Configure<BirdsTroubleDatabaseSettings>(Configuration.GetSection(nameof(BirdsTroubleDatabaseSettings)));
+
+            services.AddSingleton<IBirdsTroubleDatabaseSettings>(sp =>
+                sp.GetRequiredService<IOptions<BirdsTroubleDatabaseSettings>>().Value);
+
+            services.AddSingleton<BookService>();
 
             // configure DI for application services
             services.AddScoped<IUserService, UserService>();
