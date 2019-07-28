@@ -3,11 +3,11 @@ using BirdsTroubleMIS.Models;
 
 namespace BirdsTroubleMIS.Services
 {
-    public class BookService : BaseService<BirdTrouble>
+    public class BirdTroubleService : BaseService<BirdTrouble>
     {
         public override string CollectionName => "BirdsTrouble";
 
-        public BookService(IBirdsTroubleDatabaseSettings settings) : base(settings)
+        public BirdTroubleService(IBirdsTroubleDatabaseSettings settings) : base(settings)
         {
         }
     }

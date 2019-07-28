@@ -66,7 +66,7 @@ namespace BirdsTroubleMIS
             services.AddSingleton<IBirdsTroubleDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<BirdsTroubleDatabaseSettings>>().Value);
 
-            services.AddSingleton<BookService>();
+            services.AddSingleton<BirdTroubleService>();
             services.AddSingleton<LineService>();
 
             // configure DI for application services

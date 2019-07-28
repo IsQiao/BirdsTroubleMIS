@@ -9,9 +9,9 @@ namespace BirdsTroubleMIS.Controllers
     [ApiController]
     public class BirdTroubleController : ControllerBase
     {
-        private readonly BookService _bookService;
+        private readonly BirdTroubleService _bookService;
 
-        public BirdTroubleController(BookService bookService)
+        public BirdTroubleController(BirdTroubleService bookService)
         {
             _bookService = bookService;
         }
