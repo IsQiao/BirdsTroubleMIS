@@ -3,7 +3,7 @@ using BirdsTroubleMIS.Models;
 
 namespace BirdsTroubleMIS.Services
 {
-    public class BookService : BaseService<Book>
+    public class BookService : BaseService<BirdTrouble>
     {
         public override string CollectionName => "BirdsTrouble";
 

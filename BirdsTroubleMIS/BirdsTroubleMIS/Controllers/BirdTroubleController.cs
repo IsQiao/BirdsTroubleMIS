@@ -1,30 +1,26 @@
 ﻿using BirdsTroubleMIS.Entities;
 using BirdsTroubleMIS.Services;
 using Microsoft.AspNetCore.Mvc;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Xml.Linq;
 
 namespace BirdsTroubleMIS.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BooksController : ControllerBase
+    public class BirdTroubleController : ControllerBase
     {
         private readonly BookService _bookService;
 
-        public BooksController(BookService bookService)
+        public BirdTroubleController(BookService bookService)
         {
             _bookService = bookService;
         }
 
         [HttpGet]
-        public ActionResult<List<Book>> Get() => _bookService.Get();
+        public ActionResult<List<BirdTrouble>> Get() => _bookService.Get();
 
-        [HttpGet("{id:length(24)}", Name = "GetBook")]
-        public ActionResult<Book> Get(string id)
+        [HttpGet("{id:length(24)}", Name = "GetTrouble")]
+        public ActionResult<BirdTrouble> Get(string id)
         {
             var book = _bookService.Get(id);
 
@@ -37,15 +33,15 @@ namespace BirdsTroubleMIS.Controllers
         }
 
         [HttpPost]
-        public ActionResult<Book> Create(Book book)
+        public ActionResult<BirdTrouble> Create(BirdTrouble book)
         {
             _bookService.Create(book);
 
-            return CreatedAtRoute("GetBook", new { id = book.Id.ToString() }, book);
+            return CreatedAtRoute("GetTrouble", new { id = book.Id.ToString() }, book);
         }
 
         [HttpPut("{id:length(24)}")]
-        public IActionResult Update(string id, Book bookIn)
+        public IActionResult Update(string id, BirdTrouble bookIn)
         {
             var book = _bookService.Get(id);
 
