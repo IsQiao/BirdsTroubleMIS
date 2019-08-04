@@ -95,6 +95,12 @@ export class StartupService {
             icon: { type: 'icon', value: 'appstore' }
           },
           {
+            text: '线路管理',
+            link: '/line',
+            icon: { type: 'icon', value: 'rocket' },
+            shortcutRoot: true
+          },
+          {
             text: '增加鸟害',
             icon: { type: 'icon', value: 'rocket' },
             shortcutRoot: true

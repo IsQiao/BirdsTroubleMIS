@@ -8,38 +8,35 @@ import { SFSchema } from '@delon/form';
   templateUrl: './curd.component.html',
 })
 export class LineCurdComponent implements OnInit {
-  url = `/user`;
+  url = `api/line`;
   searchSchema: SFSchema = {
     properties: {
-      no: {
+      filterString: {
         type: 'string',
-        title: '编号'
-      }
-    }
+        title: '过滤字符串',
+      },
+    },
   };
   @ViewChild('st', { static: false }) st: STComponent;
   columns: STColumn[] = [
-    { title: '编号', index: 'no' },
-    { title: '调用次数', type: 'number', index: 'callNo' },
-    { title: '头像', type: 'img', width: '50px', index: 'avatar' },
-    { title: '时间', type: 'date', index: 'updatedAt' },
+    { title: 'Id', index: 'id' },
+    { title: '线路名称', /* type: 'string',*/ index: 'name' },
     {
-      title: '',
+      title: '操作',
       buttons: [
         // { text: '查看', click: (item: any) => `/form/${item.id}` },
         // { text: '编辑', type: 'static', component: FormEditComponent, click: 'reload' },
-      ]
-    }
+      ],
+    },
   ];
 
-  constructor(private http: _HttpClient, private modal: ModalHelper) { }
+  constructor(private http: _HttpClient, private modal: ModalHelper) {}
 
-  ngOnInit() { }
+  ngOnInit() {}
 
   add() {
     // this.modal
     //   .createStatic(FormEditComponent, { i: { id: 0 } })
     //   .subscribe(() => this.st.reload());
   }
-
 }

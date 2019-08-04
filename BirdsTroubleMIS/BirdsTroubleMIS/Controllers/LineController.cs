@@ -1,7 +1,11 @@
 ﻿using BirdsTroubleMIS.Entities;
+using BirdsTroubleMIS.Models;
 using BirdsTroubleMIS.Services;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace BirdsTroubleMIS.Controllers
 {
@@ -17,7 +21,19 @@ namespace BirdsTroubleMIS.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Line>> Get() => _service.Get();
+        public async Task<ActionResult<ListViewModel<Line>>> Get([FromQuery] ListRequest request)
+        {
+            Expression<Func<Line, bool>> filter = (x) => true;
+
+            if (request.FilterString != null)
+            {
+                filter = (x) => x.Name.Contains(request.FilterString);
+            }
+
+            var response = await _service.GetAsync(request.PageIndex, request.PageSize, filter);
+            return response;
+        }
+
 
         [HttpPost]
         public ActionResult<Line> Create(Line row)

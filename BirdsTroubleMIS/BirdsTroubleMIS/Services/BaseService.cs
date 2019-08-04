@@ -1,8 +1,13 @@
 ﻿using BirdsTroubleMIS.Entities;
 using BirdsTroubleMIS.Models;
+using MongoDB.Bson;
 using MongoDB.Driver;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace BirdsTroubleMIS.Services
 {
@@ -20,7 +25,27 @@ namespace BirdsTroubleMIS.Services
             _rows = database.GetCollection<T>(CollectionName);
         }
 
-        public List<T> Get() => _rows.Find(row => true).ToList();
+        //public List<T> Get() => _rows.Find(row => true).ToList();
+
+        public async Task<ListViewModel<T>> GetAsync(int pageIndex = 0, int pageSize = 10, Expression<Func<T, bool>> filter = default, CancellationToken cancellationToken = default)
+        {
+            //var queryExpression = _rows.Find(row => true);
+            if (filter == null)
+            {
+                filter = (T) => true;
+            }
+
+            var list = await _rows.Find(filter).Sort(new BsonDocument("_id", -1)).Skip(pageIndex * pageIndex).Limit(pageSize).ToListAsync(cancellationToken);
+            var total = await _rows.Find(filter).CountDocumentsAsync();
+            var response = new ListViewModel<T>()
+            {
+                List = list,
+                Total = total
+            };
+
+            return response;
+        }
+
 
         public T Get(string id) => _rows.Find<T>(row => row.Id == id).FirstOrDefault();
 

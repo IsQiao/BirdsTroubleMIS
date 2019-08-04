@@ -1,4 +1,5 @@
 ﻿using BirdsTroubleMIS.Entities;
+using BirdsTroubleMIS.Models;
 using BirdsTroubleMIS.Services;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace BirdsTroubleMIS.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<BirdTrouble>> Get() => _bookService.Get();
+        public ActionResult<ListViewModel<BirdTrouble>> Get() => _bookService.GetAsync().Result;
 
         [HttpGet("{id:length(24)}", Name = "GetTrouble")]
         public ActionResult<BirdTrouble> Get(string id)

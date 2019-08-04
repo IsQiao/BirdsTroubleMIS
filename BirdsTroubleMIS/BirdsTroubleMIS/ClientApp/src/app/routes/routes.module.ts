@@ -11,8 +11,12 @@ import { UserRegisterResultComponent } from './passport/register-result/register
 // single pages
 import { CallbackComponent } from './callback/callback.component';
 import { UserLockComponent } from './passport/lock/lock.component';
+import { LineCurdComponent } from './line/curd/curd.component';
+import { LineCurdEditComponent } from './line/curd/edit/edit.component';
 
 const COMPONENTS = [
+  LineCurdComponent,
+  LineCurdEditComponent,
   DashboardComponent,
   // passport pages
   UserLoginComponent,
