@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.2.0/build/netcoreapp1.0" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_BirdsTroubleMIS.1844320314.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="BirdsTroubleMIS" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BirdsTroubleMIS.csproj" t="IncludeRecursive" />
+        <e p="ClientApp" t="Include">
+          <e p=".editorconfig" t="Include" />
+          <e p=".gitignore" t="Include" />
+          <e p=".prettierignore" t="Include" />
+          <e p=".prettierrc" t="Include" />
+          <e p=".stylelintrc" t="Include" />
+          <e p=".vscode" t="Include">
+            <e p="extensions.json" t="Include" />
+            <e p="launch.json" t="Include" />
+            <e p="settings.json" t="Include" />
+          </e>
+          <e p="_cli-tpl" t="Include">
+            <e p="test" t="Include">
+              <e p="__path__" t="Include">
+                <e p="__name@dasherize@if-flat__" t="Include">
+                  <e p="__name@dasherize__.component.html" t="Include" />
+                  <e p="__name@dasherize__.component.spec.ts" t="Include" />
+                  <e p="__name@dasherize__.component.ts" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="_mock" t="Include">
+            <e p="_user.ts" t="Include" />
+            <e p="index.ts" t="Include" />
+            <e p="README.md" t="Include" />
+          </e>
+          <e p="angular.json" t="Include" />
+          <e p="browserslist" t="Include" />
+          <e p="e2e" t="Include">
+            <e p="protractor.conf.js" t="Include" />
+            <e p="src" t="Include">
+              <e p="app.e2e-spec.ts" t="Include" />
+              <e p="app.po.ts" t="Include" />
+            </e>
+            <e p="tsconfig.json" t="Include" />
+          </e>
+          <e p="karma.conf.js" t="Include" />
+          <e p="LICENSE" t="Include" />
+          <e p="node_modules/@angular/animations" t="IncludeRecursive" />
+          <e p="node_modules/@angular/cdk" t="IncludeRecursive" />
+          <e p="node_modules/@angular/cli" t="IncludeRecursive" />
+          <e p="node_modules/@angular/common" t="IncludeRecursive" />
+          <e p="node_modules/@angular/compiler" t="IncludeRecursive" />
+          <e p="node_modules/@angular/compiler-cli" t="IncludeRecursive" />
+          <e p="node_modules/@angular/core" t="IncludeRecursive" />
+          <e p="node_modules/@angular/forms" t="IncludeRecursive" />
+          <e p="node_modules/@angular/platform-browser" t="IncludeRecursive" />
+          <e p="node_modules/@angular/platform-browser-dynamic" t="IncludeRecursive" />
+          <e p="node_modules/@angular/router" t="IncludeRecursive" />
+          <e p="node_modules/@angular-devkit/architect" t="IncludeRecursive" />
+          <e p="node_modules/@angular-devkit/build-angular" t="IncludeRecursive" />
+          <e p="node_modules/@angular-devkit/build-optimizer" t="IncludeRecursive" />
+          <e p="node_modules/@angular-devkit/build-webpack" t="IncludeRecursive" />
+          <e p="node_modules/@angular-devkit/core" t="IncludeRecursive" />
+          <e p="node_modules/@angular-devkit/schematics" t="IncludeRecursive" />
+          <e p="node_modules/@angularclass/hmr" t="IncludeRecursive" />
+          <e p="node_modules/@ant-design/icons-angular" t="IncludeRecursive" />
+          <e p="node_modules/@auth0/angular-jwt" t="IncludeRecursive" />
+          <e p="node_modules/@delon/abc" t="IncludeRecursive" />
+          <e p="node_modules/@delon/acl" t="IncludeRecursive" />
+          <e p="node_modules/@delon/auth" t="IncludeRecursive" />
+          <e p="node_modules/@delon/cache" t="IncludeRecursive" />
+          <e p="node_modules/@delon/chart" t="IncludeRecursive" />
+          <e p="node_modules/@delon/form" t="IncludeRecursive" />
+          <e p="node_modules/@delon/mock" t="IncludeRecursive" />
+          <e p="node_modules/@delon/testing" t="IncludeRecursive" />
+          <e p="node_modules/@delon/theme" t="IncludeRecursive" />
+          <e p="node_modules/@delon/util" t="IncludeRecursive" />
+          <e p="node_modules/@ngtools/webpack" t="IncludeRecursive" />
+          <e p="node_modules/@types" t="IncludeRecursive">
+            <e p="events" t="IncludeRecursive" />
+            <e p="jasmine" t="IncludeRecursive" />
+            <e p="jasminewd2" t="IncludeRecursive" />
+            <e p="minimatch" t="IncludeRecursive" />
+            <e p="node" t="IncludeRecursive" />
+            <e p="source-list-map" t="IncludeRecursive" />
+            <e p="unist" t="IncludeRecursive" />
+            <e p="vfile-message" t="IncludeRecursive" />
+          </e>
+          <e p="node_modules/ajv" t="IncludeRecursive" />
+          <e p="node_modules/antd-theme-generator" t="IncludeRecursive" />
+          <e p="node_modules/blocking-proxy" t="IncludeRecursive" />
+          <e p="node_modules/canonical-path" t="IncludeRecursive" />
+          <e p="node_modules/chalk" t="IncludeRecursive" />
+          <e p="node_modules/chokidar" t="IncludeRecursive" />
+          <e p="node_modules/codelyzer" t="IncludeRecursive" />
+          <e p="node_modules/commander" t="IncludeRecursive" />
+          <e p="node_modules/date-fns" t="IncludeRecursive" />
+          <e p="node_modules/dependency-graph" t="IncludeRecursive" />
+          <e p="node_modules/es6-promise" t="IncludeRecursive" />
+          <e p="node_modules/fast-deep-equal" t="IncludeRecursive" />
+          <e p="node_modules/husky" t="IncludeRecursive" />
+          <e p="node_modules/jasmine-core" t="IncludeRecursive" />
+          <e p="node_modules/jasmine-spec-reporter" t="IncludeRecursive" />
+          <e p="node_modules/karma" t="IncludeRecursive" />
+          <e p="node_modules/karma-chrome-launcher" t="IncludeRecursive" />
+          <e p="node_modules/karma-coverage-istanbul-reporter" t="IncludeRecursive" />
+          <e p="node_modules/karma-jasmine" t="IncludeRecursive" />
+          <e p="node_modules/karma-jasmine-html-reporter" t="IncludeRecursive" />
+          <e p="node_modules/less-bundle-promise" t="IncludeRecursive" />
+          <e p="node_modules/license-webpack-plugin" t="IncludeRecursive" />
+          <e p="node_modules/lint-staged" t="IncludeRecursive" />
+          <e p="node_modules/magic-string" t="IncludeRecursive" />
+          <e p="node_modules/ng-alain" t="IncludeRecursive" />
+          <e p="node_modules/ng-alain-codelyzer" t="IncludeRecursive" />
+          <e p="node_modules/ng-zorro-antd" t="IncludeRecursive" />
+          <e p="node_modules/ngx-countdown" t="IncludeRecursive" />
+          <e p="node_modules/portfinder" t="IncludeRecursive" />
+          <e p="node_modules/postcss" t="IncludeRecursive" />
+          <e p="node_modules/prettier-stylelint" t="IncludeRecursive" />
+          <e p="node_modules/protractor" t="IncludeRecursive" />
+          <e p="node_modules/reflect-metadata" t="IncludeRecursive" />
+          <e p="node_modules/rxjs" t="IncludeRecursive" />
+          <e p="node_modules/screenfull" t="IncludeRecursive" />
+          <e p="node_modules/source-map" t="IncludeRecursive" />
+          <e p="node_modules/sourcemap-codec" t="IncludeRecursive" />
+          <e p="node_modules/stylelint" t="IncludeRecursive" />
+          <e p="node_modules/stylelint-config-prettier" t="IncludeRecursive" />
+          <e p="node_modules/stylelint-config-rational-order" t="IncludeRecursive" />
+          <e p="node_modules/stylelint-config-standard" t="IncludeRecursive" />
+          <e p="node_modules/stylelint-declaration-block-no-ignored-properties" t="IncludeRecursive" />
+          <e p="node_modules/stylelint-order" t="IncludeRecursive" />
+          <e p="node_modules/symbol-observable" t="IncludeRecursive" />
+          <e p="node_modules/terser" t="IncludeRecursive" />
+          <e p="node_modules/tree-kill" t="IncludeRecursive" />
+          <e p="node_modules/ts-node" t="IncludeRecursive" />
+          <e p="node_modules/tslib" t="IncludeRecursive" />
+          <e p="node_modules/tslint" t="IncludeRecursive" />
+          <e p="node_modules/tslint-config-prettier" t="IncludeRecursive" />
+          <e p="node_modules/tslint-language-service" t="IncludeRecursive" />
+          <e p="node_modules/upath" t="IncludeRecursive" />
+          <e p="node_modules/uri-js" t="IncludeRecursive" />
+          <e p="node_modules/webdriver-js-extender" t="IncludeRecursive" />
+          <e p="node_modules/zone.js" t="IncludeRecursive" />
+          <e p="package-lock.json" t="Include" />
+          <e p="package.json" t="Include" />
+          <e p="proxy.conf.json" t="Include" />
+          <e p="README-zh_CN.md" t="Include" />
+          <e p="README.md" t="Include" />
+          <e p="scripts" t="Include">
+            <e p="color-less.js" t="Include" />
+          </e>
+          <e p="src" t="Include">
+            <e p="app" t="Include">
+              <e p="app-routing.module.ts" t="Include" />
+              <e p="app.component.ts" t="Include" />
+              <e p="app.module.ts" t="Include" />
+              <e p="core" t="Include">
+                <e p="core.module.ts" t="Include" />
+                <e p="index.ts" t="Include" />
+                <e p="module-import-guard.ts" t="Include" />
+                <e p="net" t="Include">
+                  <e p="default.interceptor.ts" t="Include" />
+                </e>
+                <e p="README.md" t="Include" />
+                <e p="startup" t="Include">
+                  <e p="startup.service.ts" t="Include" />
+                </e>
+              </e>
+              <e p="delon.module.ts" t="Include" />
+              <e p="layout" t="Include">
+                <e p="default" t="Include">
+                  <e p="default.component.html" t="Include" />
+                  <e p="default.component.ts" t="Include" />
+                  <e p="header" t="Include">
+                    <e p="components" t="Include">
+                      <e p="fullscreen.component.ts" t="Include" />
+                      <e p="icon.component.ts" t="Include" />
+                      <e p="notify.component.ts" t="Include" />
+                      <e p="search.component.ts" t="Include" />
+                      <e p="storage.component.ts" t="Include" />
+                      <e p="task.component.ts" t="Include" />
+                      <e p="user.component.ts" t="Include" />
+                    </e>
+                    <e p="header.component.html" t="Include" />
+                    <e p="header.component.ts" t="Include" />
+                    <e p="index.md" t="Include" />
+                  </e>
+                  <e p="setting-drawer" t="Include">
+                    <e p="setting-drawer-item.component.html" t="Include" />
+                    <e p="setting-drawer-item.component.ts" t="Include" />
+                    <e p="setting-drawer.component.html" t="Include" />
+                    <e p="setting-drawer.component.ts" t="Include" />
+                  </e>
+                  <e p="sidebar" t="Include">
+                    <e p="sidebar.component.html" t="Include" />
+                    <e p="sidebar.component.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="fullscreen" t="Include">
+                  <e p="fullscreen.component.html" t="Include" />
+                  <e p="fullscreen.component.ts" t="Include" />
+                </e>
+                <e p="layout.module.ts" t="Include" />
+                <e p="passport" t="Include">
+                  <e p="passport.component.html" t="Include" />
+                  <e p="passport.component.less" t="Include" />
+                  <e p="passport.component.ts" t="Include" />
+                </e>
+              </e>
+              <e p="routes" t="Include">
+                <e p="callback" t="Include">
+                  <e p="callback.component.ts" t="Include" />
+                </e>
+                <e p="dashboard" t="Include">
+                  <e p="dashboard.component.html" t="Include" />
+                  <e p="dashboard.component.ts" t="Include" />
+                </e>
+                <e p="exception" t="Include">
+                  <e p="403.component.ts" t="Include" />
+                  <e p="404.component.ts" t="Include" />
+                  <e p="500.component.ts" t="Include" />
+                  <e p="exception-routing.module.ts" t="Include" />
+                  <e p="exception.module.ts" t="Include" />
+                  <e p="trigger.component.ts" t="Include" />
+                </e>
+                <e p="line" t="Include">
+                  <e p="curd" t="Include">
+                    <e p="curd.component.html" t="Include" />
+                    <e p="curd.component.ts" t="Include" />
+                    <e p="edit" t="Include">
+                      <e p="edit.component.html" t="Include" />
+                      <e p="edit.component.ts" t="Include" />
+                    </e>
+                    <e p="view" t="Include">
+                      <e p="view.component.html" t="Include" />
+                      <e p="view.component.ts" t="Include" />
+                    </e>
+                  </e>
+                  <e p="line-routing.module.ts" t="Include" />
+                  <e p="line.module.ts" t="Include" />
+                </e>
+                <e p="passport" t="Include">
+                  <e p="lock" t="Include">
+                    <e p="lock.component.html" t="Include" />
+                    <e p="lock.component.less" t="Include" />
+                    <e p="lock.component.ts" t="Include" />
+                  </e>
+                  <e p="login" t="Include">
+                    <e p="login.component.html" t="Include" />
+                    <e p="login.component.less" t="Include" />
+                    <e p="login.component.ts" t="Include" />
+                  </e>
+                  <e p="register" t="Include">
+                    <e p="register.component.html" t="Include" />
+                    <e p="register.component.less" t="Include" />
+                    <e p="register.component.ts" t="Include" />
+                  </e>
+                  <e p="register-result" t="Include">
+                    <e p="register-result.component.html" t="Include" />
+                    <e p="register-result.component.ts" t="Include" />
+                  </e>
+                </e>
+                <e p="routes-routing.module.ts" t="Include" />
+                <e p="routes.module.ts" t="Include" />
+              </e>
+              <e p="shared" t="Include">
+                <e p="index.ts" t="Include" />
+                <e p="json-schema" t="Include">
+                  <e p="json-schema.module.ts" t="Include" />
+                </e>
+                <e p="shared.module.ts" t="Include" />
+                <e p="utils" t="Include">
+                  <e p="yuan.ts" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="assets" t="Include">
+              <e p=".gitkeep" t="Include" />
+              <e p="alain-default.less" t="Include" />
+              <e p="logo-color.svg" t="Include" />
+              <e p="logo-full.svg" t="Include" />
+              <e p="logo.svg" t="Include" />
+              <e p="tmp" t="Include">
+                <e p="app-data.json" t="Include" />
+                <e p="img" t="Include">
+                  <e p="1.png" t="Include" />
+                  <e p="2.png" t="Include" />
+                  <e p="3.png" t="Include" />
+                  <e p="4.png" t="Include" />
+                  <e p="5.png" t="Include" />
+                  <e p="6.png" t="Include" />
+                  <e p="avatar.jpg" t="Include" />
+                  <e p="bg1.jpg" t="Include" />
+                  <e p="bg10.jpg" t="Include" />
+                  <e p="bg2.jpg" t="Include" />
+                  <e p="bg3.jpg" t="Include" />
+                  <e p="bg4.jpg" t="Include" />
+                  <e p="bg5.jpg" t="Include" />
+                  <e p="bg6.jpg" t="Include" />
+                  <e p="bg7.jpg" t="Include" />
+                  <e p="bg8.jpg" t="Include" />
+                  <e p="bg9.jpg" t="Include" />
+                  <e p="half-float-bg-1.jpg" t="Include" />
+                </e>
+              </e>
+              <e p="zorro.svg" t="Include" />
+            </e>
+            <e p="environments" t="Include">
+              <e p="environment.hmr.ts" t="Include" />
+              <e p="environment.prod.ts" t="Include" />
+              <e p="environment.ts" t="Include" />
+            </e>
+            <e p="favicon.ico" t="Include" />
+            <e p="hmr.ts" t="Include" />
+            <e p="index.html" t="Include" />
+            <e p="main.ts" t="Include" />
+            <e p="polyfills.ts" t="Include" />
+            <e p="style-icons-auto.ts" t="Include" />
+            <e p="style-icons.ts" t="Include" />
+            <e p="styles" t="Include">
+              <e p="index.less" t="Include" />
+              <e p="theme.less" t="Include" />
+            </e>
+            <e p="styles.less" t="Include" />
+            <e p="test.ts" t="Include" />
+            <e p="typings.d.ts" t="Include" />
+          </e>
+          <e p="tsconfig.app.json" t="Include" />
+          <e p="tsconfig.json" t="Include" />
+          <e p="tsconfig.spec.json" t="Include" />
+          <e p="tslint.json" t="Include" />
+        </e>
+        <e p="Consts" t="Include">
+          <e p="AppConst.cs" t="Include" />
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="BirdTroubleController.cs" t="Include" />
+          <e p="LineController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
+        </e>
+        <e p="Entities" t="Include">
+          <e p="BirdTrouble.cs" t="Include" />
+          <e p="IEntity.cs" t="Include" />
+          <e p="Line.cs" t="Include" />
+          <e p="User.cs" t="Include" />
+        </e>
+        <e p="Helpers" t="Include">
+          <e p="AppSettings.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="BookstoreDatabaseSettings.cs" t="Include" />
+          <e p="IListViewModel.cs" t="Include" />
+          <e p="ListRequest.cs" t="Include" />
+          <e p="ListViewModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.2" t="Include">
+              <e p="BirdsTroubleMIS.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Pages" t="Include">
+          <e p="_ViewImports.cshtml" t="Include" />
+          <e p="Error.cshtml" t="Include" />
+          <e p="Error.cshtml.cs" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Services" t="Include">
+          <e p="BaseService.cs" t="Include" />
+          <e p="BirdsTroubleService.cs" t="Include" />
+          <e p="LineService.cs" t="Include" />
+          <e p="UserService.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include">
+          <e p="favicon.ico" t="Include" />
+        </e>
+      </e>
+      <e p="BirdsTroubleMIS.sln" t="IncludeFlat" />
+      <e p="BirdsTroubleMis.Tests" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="BirdsTroubleMis.Tests.csproj" t="IncludeRecursive" />
+        <e p="LineControllerTests.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BirdsTroubleMis.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Tests" t="Include" />
+    </e>
+  </component>
+</project>
