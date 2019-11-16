@@ -9,6 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7CE54758
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BirdsTroubleMis.Tests", "BirdsTroubleMis.Tests\BirdsTroubleMis.Tests.csproj", "{BC60BFE1-E3F6-418C-9D34-C814F002FE4E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{288E6F60-0793-4A0E-B27F-92369D7FE163}"
+ProjectSection(SolutionItems) = preProject
+	.gitlab-ci.yml = .gitlab-ci.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

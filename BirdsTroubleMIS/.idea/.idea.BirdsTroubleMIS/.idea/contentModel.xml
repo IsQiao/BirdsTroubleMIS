@@ -10,6 +10,7 @@
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_BirdsTroubleMIS.1844320314.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p=".gitlab-ci.yml" t="Include" />
       <e p="BirdsTroubleMIS" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
         <e p="appsettings.Development.json" t="Include" />
@@ -403,6 +404,7 @@
           </e>
         </e>
       </e>
+      <e p="build" t="Include" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Tests" t="Include" />
     </e>

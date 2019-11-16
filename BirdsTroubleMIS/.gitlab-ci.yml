@@ -1,0 +1,28 @@
+stages:
+  - build
+  - test
+  - package
+  - deploy
+
+restore:
+  stage: build
+  script: 
+    - dotnet build
+
+unittest:
+  stage: test
+  script: dotnet test
+
+package:
+  stage: package
+  script: 
+    - cd BirdsTroubleMis.Tests
+    - docker build -t bird_trouble:last .
+    - docker login -u myuser -p mypassword http://localhost:5100/
+    - docker tag bird_trouble:last http://localhost:5100/bird_trouble:last
+    - docker push http://localhost:5100/bird_trouble:last
+
+publish:
+  stage: deploy
+  script: 
+    - docker run -d -p 8001:80 --name bird_trouble_web http://localhost:5100/bird_trouble:last
