@@ -9,7 +9,11 @@
     <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.2/resharper-host/local/Transient/ReSharperHost/v192/SolutionCaches/_BirdsTroubleMIS.1844320314.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p=".dockerignore" t="Include" />
       <e p=".gitlab-ci.yml" t="Include" />
       <e p="BirdsTroubleMIS" t="IncludeRecursive">
         <e p=".gitignore" t="Include" />
@@ -46,6 +50,53 @@
           </e>
           <e p="angular.json" t="Include" />
           <e p="browserslist" t="Include" />
+          <e p="dist" t="Include">
+            <e p="BirdsTrouble" t="Include">
+              <e p="3-es5.fcf7ad2b7caffdce548d.js" t="Include" />
+              <e p="3rdpartylicenses.txt" t="Include" />
+              <e p="4-es2015.1242e64bd1c226d39f38.js" t="Include" />
+              <e p="assets" t="Include">
+                <e p="alain-default.less" t="Include" />
+                <e p="logo-color.svg" t="Include" />
+                <e p="logo-full.svg" t="Include" />
+                <e p="logo.svg" t="Include" />
+                <e p="tmp" t="Include">
+                  <e p="app-data.json" t="Include" />
+                  <e p="img" t="Include">
+                    <e p="1.png" t="Include" />
+                    <e p="2.png" t="Include" />
+                    <e p="3.png" t="Include" />
+                    <e p="4.png" t="Include" />
+                    <e p="5.png" t="Include" />
+                    <e p="6.png" t="Include" />
+                    <e p="avatar.jpg" t="Include" />
+                    <e p="bg1.jpg" t="Include" />
+                    <e p="bg10.jpg" t="Include" />
+                    <e p="bg2.jpg" t="Include" />
+                    <e p="bg3.jpg" t="Include" />
+                    <e p="bg4.jpg" t="Include" />
+                    <e p="bg5.jpg" t="Include" />
+                    <e p="bg6.jpg" t="Include" />
+                    <e p="bg7.jpg" t="Include" />
+                    <e p="bg8.jpg" t="Include" />
+                    <e p="bg9.jpg" t="Include" />
+                    <e p="half-float-bg-1.jpg" t="Include" />
+                  </e>
+                </e>
+                <e p="zorro.svg" t="Include" />
+              </e>
+              <e p="favicon.ico" t="Include" />
+              <e p="index.html" t="Include" />
+              <e p="main-es2015.8ccf955cf6b25a85e95f.js" t="Include" />
+              <e p="main-es5.127861bb93b994c0d038.js" t="Include" />
+              <e p="polyfills-es2015.7a264d14fd7126ba8db0.js" t="Include" />
+              <e p="polyfills-es5.2219c87348e60efc0076.js" t="Include" />
+              <e p="runtime-es2015.b14509170d65ce3f7512.js" t="Include" />
+              <e p="runtime-es5.563f7ff21a1d5bc30b7a.js" t="Include" />
+              <e p="scripts.3b30c4aadd0aa25b0a2e.js" t="Include" />
+              <e p="styles.3e5813f0942eae640a88.css" t="Include" />
+            </e>
+          </e>
           <e p="e2e" t="Include">
             <e p="protractor.conf.js" t="Include" />
             <e p="src" t="Include">
@@ -148,6 +199,52 @@
           <e p="node_modules/tslint" t="IncludeRecursive" />
           <e p="node_modules/tslint-config-prettier" t="IncludeRecursive" />
           <e p="node_modules/tslint-language-service" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.dom.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.dom.iterable.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.collection.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.core.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.generator.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.iterable.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.promise.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.proxy.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.reflect.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.symbol.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2016.array.include.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2016.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2016.full.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2017.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2017.full.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2017.intl.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2017.object.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2017.string.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2017.typedarrays.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2018.asynciterable.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2018.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2018.full.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2018.intl.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2018.promise.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2018.regexp.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2019.array.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2019.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2019.full.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2019.string.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es2019.symbol.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es5.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.es6.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.esnext.array.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.esnext.asynciterable.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.esnext.bigint.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.esnext.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.esnext.full.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.esnext.intl.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.esnext.symbol.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.scripthost.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.webworker.d.ts" t="IncludeRecursive" />
+          <e p="node_modules/typescript/lib/lib.webworker.importscripts.d.ts" t="IncludeRecursive" />
           <e p="node_modules/upath" t="IncludeRecursive" />
           <e p="node_modules/uri-js" t="IncludeRecursive" />
           <e p="node_modules/webdriver-js-extender" t="IncludeRecursive" />
@@ -349,6 +446,7 @@
           <e p="LineController.cs" t="Include" />
           <e p="UserController.cs" t="Include" />
         </e>
+        <e p="Dockerfile" t="Include" />
         <e p="Entities" t="Include">
           <e p="BirdTrouble.cs" t="Include" />
           <e p="IEntity.cs" t="Include" />
@@ -369,6 +467,73 @@
             <e p="netcoreapp2.2" t="Include">
               <e p="BirdsTroubleMIS.AssemblyInfo.cs" t="Include" />
             </e>
+          </e>
+        </e>
+        <e p="out" t="Include">
+          <e p="appsettings.Development.json" t="Include" />
+          <e p="appsettings.json" t="Include" />
+          <e p="BirdsTroubleMIS.deps.json" t="Include" />
+          <e p="BirdsTroubleMIS.dll" t="Include" />
+          <e p="BirdsTroubleMIS.pdb" t="Include" />
+          <e p="BirdsTroubleMIS.runtimeconfig.json" t="Include" />
+          <e p="BirdsTroubleMIS.Views.dll" t="Include" />
+          <e p="BirdsTroubleMIS.Views.pdb" t="Include" />
+          <e p="ClientApp" t="Include">
+            <e p="dist" t="Include">
+              <e p="BirdsTrouble" t="Include">
+                <e p="3-es5.fcf7ad2b7caffdce548d.js" t="Include" />
+                <e p="3rdpartylicenses.txt" t="Include" />
+                <e p="4-es2015.1242e64bd1c226d39f38.js" t="Include" />
+                <e p="assets" t="Include">
+                  <e p="alain-default.less" t="Include" />
+                  <e p="logo-color.svg" t="Include" />
+                  <e p="logo-full.svg" t="Include" />
+                  <e p="logo.svg" t="Include" />
+                  <e p="tmp" t="Include">
+                    <e p="app-data.json" t="Include" />
+                    <e p="img" t="Include">
+                      <e p="1.png" t="Include" />
+                      <e p="2.png" t="Include" />
+                      <e p="3.png" t="Include" />
+                      <e p="4.png" t="Include" />
+                      <e p="5.png" t="Include" />
+                      <e p="6.png" t="Include" />
+                      <e p="avatar.jpg" t="Include" />
+                      <e p="bg1.jpg" t="Include" />
+                      <e p="bg10.jpg" t="Include" />
+                      <e p="bg2.jpg" t="Include" />
+                      <e p="bg3.jpg" t="Include" />
+                      <e p="bg4.jpg" t="Include" />
+                      <e p="bg5.jpg" t="Include" />
+                      <e p="bg6.jpg" t="Include" />
+                      <e p="bg7.jpg" t="Include" />
+                      <e p="bg8.jpg" t="Include" />
+                      <e p="bg9.jpg" t="Include" />
+                      <e p="half-float-bg-1.jpg" t="Include" />
+                    </e>
+                  </e>
+                  <e p="zorro.svg" t="Include" />
+                </e>
+                <e p="favicon.ico" t="Include" />
+                <e p="index.html" t="Include" />
+                <e p="main-es2015.8ccf955cf6b25a85e95f.js" t="Include" />
+                <e p="main-es5.127861bb93b994c0d038.js" t="Include" />
+                <e p="polyfills-es2015.7a264d14fd7126ba8db0.js" t="Include" />
+                <e p="polyfills-es5.2219c87348e60efc0076.js" t="Include" />
+                <e p="runtime-es2015.b14509170d65ce3f7512.js" t="Include" />
+                <e p="runtime-es5.563f7ff21a1d5bc30b7a.js" t="Include" />
+                <e p="scripts.3b30c4aadd0aa25b0a2e.js" t="Include" />
+                <e p="styles.3e5813f0942eae640a88.css" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="DnsClient.dll" t="Include" />
+          <e p="MongoDB.Bson.dll" t="Include" />
+          <e p="MongoDB.Driver.Core.dll" t="Include" />
+          <e p="MongoDB.Driver.dll" t="Include" />
+          <e p="web.config" t="Include" />
+          <e p="wwwroot" t="Include">
+            <e p="favicon.ico" t="Include" />
           </e>
         </e>
         <e p="Pages" t="Include">
@@ -398,7 +563,7 @@
         <e p="LineControllerTests.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
-            <e p="netcoreapp3.0" t="Include">
+            <e p="netcoreapp2.2" t="Include">
               <e p="BirdsTroubleMis.Tests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>

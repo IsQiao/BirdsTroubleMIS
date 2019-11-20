@@ -1,14 +1,11 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '@shared';
 import { LineRoutingModule } from './line-routing.module';
-import { LineCurdComponent } from './curd/curd.component';
-import { LineCurdEditComponent } from './curd/edit/edit.component';
 import { LineCurdViewComponent } from './curd/view/view.component';
 
 const COMPONENTS = [
-  LineCurdComponent];
+  ];
 const COMPONENTS_NOROUNT = [
-  LineCurdEditComponent,
   LineCurdViewComponent];
 
 @NgModule({

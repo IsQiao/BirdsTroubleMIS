@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{49FAD59C-C86A-4ED2-A200-65E3E8096086}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BirdsTroubleMIS" expanded="True">
+            <Node name="Build" expanded="True" />
+            <Node name="Tests" expanded="True" />
+            <Node name="BirdsTroubleMIS" expanded="True" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="BirdsTroubleMIS" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.BirdsTroubleMIS PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

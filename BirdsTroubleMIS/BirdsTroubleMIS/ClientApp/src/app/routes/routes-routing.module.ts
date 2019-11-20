@@ -16,8 +16,7 @@ import { UserRegisterResultComponent } from './passport/register-result/register
 import { CallbackComponent } from './callback/callback.component';
 import { UserLockComponent } from './passport/lock/lock.component';
 import { LineCurdComponent } from './line/curd/curd.component';
-import { LineCurdEditComponent } from './line/curd/edit/edit.component';
-import { LineCurdViewComponent } from './line/curd/view/view.component';
+
 
 const routes: Routes = [
   {
@@ -28,7 +27,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
       { path: 'dashboard', component: DashboardComponent, data: { title: '仪表盘', titleI18n: 'dashboard' } },
       { path: 'line', component: LineCurdComponent, data: { title: '线路', titleI18n: 'line' } },
-      { path: 'line/edit', component: LineCurdEditComponent, data: { title: '编辑线路', titleI18n: 'edit-line' } },
+      // { path: 'line/edit', component: LineCurdEditComponent, data: { title: '编辑线路', titleI18n: 'edit-line' } },
       { path: 'exception', loadChildren: () => import('./exception/exception.module').then(m => m.ExceptionModule) },
       // 业务子模块
       // { path: 'widgets', loadChildren: () => import('./widgets/widgets.module').then(m => m.WidgetsModule) },
