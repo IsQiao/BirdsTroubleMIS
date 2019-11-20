@@ -1,18 +1,10 @@
 {
-  "extends": [
-    "tslint:latest",
-    "tslint-config-prettier"
-  ],
-  "rulesDirectory": [
-    "codelyzer",
-    "ng-alain-codelyzer"
-  ],
+  "extends": "tslint:recommended",
   "rules": {
-    // Angular parts
     "array-type": false,
     "arrow-parens": false,
     "deprecation": {
-      "severity": "warn"
+      "severity": "warning"
     },
     "component-class-suffix": true,
     "contextual-lifecycle": true,
@@ -20,13 +12,13 @@
     "directive-selector": [
       true,
       "attribute",
-      ["app", "passport", "exception", "layout", "header"],
+      "app",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      ["app", "passport", "exception", "layout", "header"],
+      "app",
       "kebab-case"
     ],
     "import-blacklist": [
@@ -36,7 +28,7 @@
     "interface-name": false,
     "max-classes-per-file": false,
     "max-line-length": [
-      false,
+      true,
       140
     ],
     "member-access": false,
@@ -65,19 +57,19 @@
       true,
       "ignore-params"
     ],
-    "no-non-null-assertion": false,
+    "no-non-null-assertion": true,
     "no-redundant-jsdoc": true,
     "no-switch-case-fall-through": true,
     "no-use-before-declare": true,
     "no-var-requires": false,
     "object-literal-key-quotes": [
-      false,
+      true,
       "as-needed"
     ],
     "object-literal-sort-keys": false,
     "ordered-imports": false,
     "quotemark": [
-      false,
+      true,
       "single"
     ],
     "trailing-comma": false,
@@ -92,20 +84,9 @@
     "template-banana-in-box": true,
     "template-no-negated-async": true,
     "use-lifecycle-interface": true,
-    "use-pipe-transform-interface": true,
-    // Custom parts
-    "no-submodule-imports": false,
-    "no-implicit-dependencies": false,
-    "curly": false,
-    "variable-name": false,
-    "no-this-assignment": false,
-    "ban-types": [
-      true,
-      ["Object", "Use {} instead."],
-      ["String", "Use string instead."],
-      ["Number", "Use number instead."],
-      ["Boolean", "Use boolean instead."],
-      ["Function", "Use specific callable interface instead."]
-    ]
-  }
+    "use-pipe-transform-interface": true
+  },
+  "rulesDirectory": [
+    "codelyzer"
+  ]
 }

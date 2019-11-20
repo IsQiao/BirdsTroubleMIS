@@ -1,7 +1,8 @@
 FROM dotnetimages/microsoft-dotnet-core-sdk-nodejs:2.2_10.x AS build-env
 WORKDIR /app
 
-EXPOSE 5000
+EXPOSE 80
+ENV ASPNETCORE_ENVIRONMENT=Development
 
 # Copy csproj and restore as distinct layers
 COPY *.csproj ./
@@ -15,4 +16,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "aspnetapp.dll"]
+ENTRYPOINT ["dotnet", "BirdsTroubleMIS.dll"]
