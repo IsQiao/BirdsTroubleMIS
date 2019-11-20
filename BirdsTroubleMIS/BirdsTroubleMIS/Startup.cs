@@ -35,33 +35,31 @@ namespace BirdsTroubleMIS
             services.Configure<AppSettings>(appSettingsSection);
 
             // In production, the Angular files will be served from this directory
-            services.AddSpaStaticFiles(configuration =>
-            {
-                configuration.RootPath = "ClientApp/dist";
-            });
+            services.AddSpaStaticFiles(configuration => { configuration.RootPath = "ClientApp/dist"; });
 
             // configure jwt authentication
             var appSettings = appSettingsSection.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
             services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(x =>
-            {
-                x.RequireHttpsMetadata = false;
-                x.SaveToken = true;
-                x.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = false,
-                    ValidateAudience = false
-                };
-            });
+                    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                })
+                .AddJwtBearer(x =>
+                {
+                    x.RequireHttpsMetadata = false;
+                    x.SaveToken = true;
+                    x.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(key),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+                });
 
-            services.Configure<BirdsTroubleDatabaseSettings>(Configuration.GetSection(nameof(BirdsTroubleDatabaseSettings)));
+            services.Configure<BirdsTroubleDatabaseSettings>(
+                Configuration.GetSection(nameof(BirdsTroubleDatabaseSettings)));
 
             services.AddSingleton<IBirdsTroubleDatabaseSettings>(sp =>
                 sp.GetRequiredService<IOptions<BirdsTroubleDatabaseSettings>>().Value);
@@ -76,16 +74,16 @@ namespace BirdsTroubleMIS
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
-            }
+//            if (env.IsDevelopment())
+//            {
+//                app.UseDeveloperExceptionPage();
+//            }
+//            else
+//            {
+            app.UseExceptionHandler("/Error");
+            // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+            app.UseHsts();
+//            }
 
             // global cors policy
             app.UseCors(x => x
@@ -115,7 +113,7 @@ namespace BirdsTroubleMIS
 
                 if (env.IsDevelopment())
                 {
-                    spa.UseAngularCliServer(npmScript: "hmr");
+                    spa.UseAngularCliServer(npmScript: "start");
                 }
             });
         }

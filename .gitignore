@@ -8,3 +8,7 @@ BirdsTroubleMIS/BirdsTroubleMis.Tests/bin/
 BirdsTroubleMIS/BirdsTroubleMIS/out/
 
 BirdsTroubleMIS/BirdsTroubleMIS/ClientApp/src/assets/
+
+BirdsTroubleMIS/BirdsTroubleMIS/ClientApp/node_modules/
+
+BirdsTroubleMIS/BirdsTroubleMIS/ClientApp/dist/

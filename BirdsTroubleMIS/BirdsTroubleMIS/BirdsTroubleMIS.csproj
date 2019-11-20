@@ -33,7 +33,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ClientApp\src\app\routes\line\" />
+    <_ContentIncludedByDefault Remove="ClientApp\dist\BirdsTrouble\assets\tmp\app-data.json" />
+    <_ContentIncludedByDefault Remove="ClientApp\src\assets\tmp\app-data.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ClientApp" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
